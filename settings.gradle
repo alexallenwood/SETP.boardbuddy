@@ -1,0 +1,2 @@
+rootProject.name='SETPboardbuddy'
+include ':app'

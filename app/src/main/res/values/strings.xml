@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SETPboardbuddy</string>
+    <string name="Play_Matchmaking">Play Matchmaking 🎲</string>
+    <string name="Group_Events">Group Events 👨‍👩‍👧‍👦</string>
+    <string name="Map">Map</string>
+    <string name="Settings">Settings ⚙️</string>
+    <string name="My_Matches">My Matches 📝</string>
+    <string name="BoardBuddy">boardbuddy</string>
+    <string name="Profile">🧔</string>
+    <string name="title_activity_map">Map</string>
+</resources>
