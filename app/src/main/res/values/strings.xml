@@ -1,4 +1,12 @@
 <resources>
+
+    <string-array name="PlayViewSort">
+        <item >Proximity</item>
+        <item >Preferred Game</item>
+        <item >Oppnt. Skill Lvl.</item>
+    </string-array>
+
+
     <string name="app_name">SETPboardbuddy</string>
     <string name="Play_Matchmaking">Play Matchmaking 🎲</string>
     <string name="Group_Events">Group Events 👨‍👩‍👧‍👦</string>
@@ -8,4 +16,5 @@
     <string name="BoardBuddy">boardbuddy</string>
     <string name="Profile">🧔</string>
     <string name="title_activity_map">Map</string>
+
 </resources>

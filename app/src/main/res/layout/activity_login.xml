@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <EditText
+        android:id="@+id/inptEmail"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inptPassword"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:ems="10"
+        android:inputType="textWebPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txtEmailAddress"
         android:layout_width="wrap_content"
@@ -61,28 +83,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/inptPassword"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="290dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/inptEmail"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
