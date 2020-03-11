@@ -11,7 +11,7 @@
         android:id="@+id/editBio"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:text="@string/Edit_Username"
+        android:text="@string/Short_Bio"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,10 +39,10 @@
         android:layout_height="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintVertical_bias="0.218"
         app:srcCompat="@drawable/circle_button" />
 
     <Button
@@ -53,10 +53,9 @@
         android:text="@string/Edit_Photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.39" />
 
     <ImageButton
         android:id="@+id/imageButton"

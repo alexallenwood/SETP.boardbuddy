@@ -11,6 +11,6 @@
     <string name="Edit_Profile">Edit Profile</string>
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username</string>
-    >string name="Short_Bio">Short Bio</string>
+    <string name="Short_Bio">Edit Short Bio</string>
 
 </resources>
