@@ -14,5 +14,7 @@
     <string name="Short_Bio">Edit Short Bio</string>
     <string name="Users_Name">Username</string>
     <string name="Password">Edit Password</string>
+    <string name="Back">Back</string>
+    <string name="Save">Save</string>
 
 </resources>

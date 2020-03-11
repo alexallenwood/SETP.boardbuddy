@@ -7,12 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".edit_profile">
 
+    <Button
+        android:id="@+id/save"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:background="#C8E6E6"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="@+id/Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
     <TextView
         android:id="@+id/editPassword"
         android:layout_width="100dp"
         android:layout_height="20dp"
         android:text="@string/Password"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -26,6 +40,7 @@
         android:layout_height="20dp"
         android:text="@string/Short_Bio"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -86,8 +101,9 @@
         android:id="@+id/editUsername"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:textSize="15sp"
         android:text="@string/Edit_Username"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
@@ -130,4 +146,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.699"
         app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:background="#C8E6E6"
+        android:text="@string/Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>
