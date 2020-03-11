@@ -12,5 +12,7 @@
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username</string>
     <string name="Short_Bio">Edit Short Bio</string>
+    <string name="Users_Name">Username</string>
+    <string name="Password">Edit Password</string>
 
 </resources>
