@@ -9,4 +9,8 @@
     <string name="Profile">🧔</string>
     <string name="title_activity_map">Map</string>
     <string name="Logo">Connecting nearby boardgame users.</string>
+    <string name="Back_Button">Back</string>
+    <string name="Sort_By">Sort By</string>
+    <string name="Profiles">Profile</string>
+
 </resources>
