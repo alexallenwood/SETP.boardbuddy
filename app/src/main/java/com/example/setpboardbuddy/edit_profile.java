@@ -2,13 +2,17 @@ package com.example.setpboardbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class edit_profile extends AppCompatActivity {
+    private static final int RESULT_LOAD_IMAGE = 1;
 
     private EditText newUsername;
     private EditText newShortBio;
@@ -16,6 +20,7 @@ public class edit_profile extends AppCompatActivity {
     private String Uname;
     private String shortBio;
     private String Pword;
+    private ImageView profilePic;
     Button save;
 
     @Override
@@ -23,6 +28,20 @@ public class edit_profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
+        profilePic = (ImageView) findViewById(R.id.profilePic);
+        profilePic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch(v.getId()){
+                    case R.id.profilePic:
+                        Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                        startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
+                        break;
+
+                }
+            }
+            
+        });
         newUsername = findViewById(R.id.enterUsrname);
         newShortBio = findViewById(R.id.enterShortBio);
         newPassword = findViewById(R.id.enterPword);
