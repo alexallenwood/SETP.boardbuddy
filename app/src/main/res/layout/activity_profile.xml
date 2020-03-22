@@ -10,7 +10,7 @@
         android:id="@+id/imageView2"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:src="@drawable/user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,8 +20,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
         android:text="Dan Smith"
         android:textColor="#000000"
@@ -35,11 +34,11 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="539dp"
+        android:layout_marginBottom="550dp"
+        android:fontFamily="sans-serif"
         android:text="Portsmouth"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,28 +50,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="364dp"
         android:layout_marginEnd="299dp"
         android:layout_marginRight="299dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
         android:text="Top Games"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="392dp"
-        android:layout_height="470dp"
-        android:layout_marginTop="14dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="418dp"
+        android:layout_height="405dp"
         android:orientation="vertical"
-        android:weightSum="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="401dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,28 +82,65 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="130dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardMaxElevation="5dp"
-                app:cardBackgroundColor="#fff">
+                app:cardBackgroundColor="#fff"
+                app:cardMaxElevation="5dp">
 
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/Chess" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily=""
-                    android:text="Chess"
-                    android:textAlignment="center" />
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/Chess" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="CHESS"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff"
+                app:cardMaxElevation="5dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/tm" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="TERRAFORMING MARS"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
@@ -114,28 +150,69 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="2">
+
             <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="2dp"
+                android:layout_height="130dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardMaxElevation="5dp"
-                app:cardBackgroundColor="#fff">
+                app:cardBackgroundColor="#fff"
+                app:cardMaxElevation="5dp">
 
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/Chess" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily=""
-                    android:text="Chess"
-                    android:textAlignment="center" />
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/Brass" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="BRASS"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff"
+                app:cardMaxElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dnd_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="DUNGENS AND DRAGONS"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
         <LinearLayout
@@ -146,28 +223,93 @@
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="2dp"
+                android:layout_height="130dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardMaxElevation="5dp"
-                app:cardBackgroundColor="#fff">
+                app:cardBackgroundColor="#fff"
+                app:cardMaxElevation="5dp">
 
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/Chess" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily=""
-                    android:text="Chess"
-                    android:textAlignment="center" />
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/GM" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="GLOOMHAVEN "
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff"
+                app:cardMaxElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/PL" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:text="PANDEMIC LEGACY"
+                        android:textAlignment="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="355dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Come and challenge me if you dare :D"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="53dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Edit Profile"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
