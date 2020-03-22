@@ -16,10 +16,12 @@
     <string name="Password">Edit Password:</string>
     <string name="Back">Back</string>
     <string name="Save">Save</string>
-    <string name="Edit_Descr">Edit your details below & then hit the update buttons besides details:</string>
+    <string name="Edit_Descr">Edit your details below & then hit the save button below:</string>
     <string name="Enter_Username">Enter new name here</string>
     <string name="Enter_Bio">Enter new bio here</string>
     <string name="Enter_Password">Enter new password here</string>
+    <string name="Re_enter_Password">Re-enter password here</string>
     <string name="Change_Photo">Change Profile Photo</string>
+    <string name="Confirm_Password">Confirm Password:</string>
 
 </resources>

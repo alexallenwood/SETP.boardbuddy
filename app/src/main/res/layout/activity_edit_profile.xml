@@ -7,16 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".edit_profile">
 
+    <TextView
+        android:id="@+id/editPassword2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Password"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
     <EditText
-        android:id="@+id/enterPword"
-        android:layout_width="222dp"
-        android:layout_height="50dp"
+        android:id="@+id/enterPword2"
+        android:layout_width="249dp"
+        android:layout_height="52dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Enter_Password"
         android:textSize="14sp"
         tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="563dp" />
+        tools:layout_editor_absoluteY="544dp" />
+
+    <EditText
+        android:id="@+id/enterCPword"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Re_enter_Password"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
+        tools:layout_editor_absoluteX="96dp" />
 
     <Button
         android:id="@+id/save"
@@ -32,20 +61,20 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <TextView
-        android:id="@+id/editPassword"
-        android:layout_width="100dp"
-        android:layout_height="20dp"
+        android:id="@+id/editCPassword"
+        android:layout_width="155dp"
+        android:layout_height="26dp"
         android:gravity="center_horizontal"
-        android:text="@string/Password"
+        android:text="@string/Confirm_Password"
         android:textAlignment="center"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintVertical_bias="0.858" />
 
     <TextView
         android:id="@+id/enterShortBio"
@@ -103,19 +132,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.421" />
 
-    <ImageButton
-        android:id="@+id/editUsrname"
-        android:layout_width="34dp"
-        android:layout_height="32dp"
-        android:background="#C8E6E6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
-
     <TextView
         android:id="@+id/editUsername"
         android:layout_width="142dp"
@@ -132,19 +148,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.558" />
 
-    <ImageButton
-        android:id="@+id/editShortBio"
-        android:layout_width="35dp"
-        android:layout_height="34dp"
-        android:background="#C8E6E6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
     <TextView
         android:id="@+id/Name"
         android:layout_width="wrap_content"
@@ -158,19 +161,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.127"
         android:gravity="center_horizontal" />
-
-    <ImageButton
-        android:id="@+id/editPword"
-        android:layout_width="35dp"
-        android:layout_height="32dp"
-        android:background="#C8E6E6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819"
-        app:srcCompat="@android:drawable/ic_menu_view" />
 
     <Button
         android:id="@+id/Back"
@@ -189,20 +179,18 @@
         android:id="@+id/editDesc"
         android:layout_width="321dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
         android:text="@string/Edit_Descr"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/editUsrname"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.484"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <EditText
         android:id="@+id/enterUsrname"
-        android:layout_width="211dp"
-        android:layout_height="47dp"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Enter_Username"
@@ -212,8 +200,8 @@
 
     <EditText
         android:id="@+id/enterShortBio"
-        android:layout_width="217dp"
-        android:layout_height="50dp"
+        android:layout_width="246dp"
+        android:layout_height="55dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Enter_Bio"
