@@ -12,11 +12,11 @@
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username:</string>
     <string name="Short_Bio">Edit Short Bio:</string>
-    <string name="Users_Name">Player's Name</string>
+    <string name="Users_Name">Player\'s Name</string>
     <string name="Password">Edit Password:</string>
     <string name="Back">Back</string>
     <string name="Save">Save</string>
-    <string name="Edit_Descr">Edit your details below & then hit the save button below:</string>
+    <string name="Edit_Descr">Edit your details below and hit the save button below:</string>
     <string name="Enter_Username">Enter new name here</string>
     <string name="Enter_Bio">Enter new bio here</string>
     <string name="Enter_Password">Enter new password here</string>
