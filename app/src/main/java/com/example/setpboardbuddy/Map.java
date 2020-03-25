@@ -49,7 +49,7 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
         // Add a marker in Sydney and move the camera
         LatLng Portsmouth = new LatLng(50.806869, -1.072562);
         mMap.addMarker(new MarkerOptions().position(Portsmouth).title("Marker in Portsmouth"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Portsmouth));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Portsmouth, 10.2f));
 
         mapAPI = googleMap;
 
