@@ -12,5 +12,6 @@
     <string name="Back_button">Back</string>
     <string name="Play">Play</string>
     <string name="CB_Mode">Colour Blind Mode</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
