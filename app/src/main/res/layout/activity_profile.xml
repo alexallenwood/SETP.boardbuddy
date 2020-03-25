@@ -10,9 +10,10 @@
         android:id="@+id/imageView2"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/user"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="Dan Smith"
+        android:text="@string/DanSmith"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
@@ -36,11 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="550dp"
         android:fontFamily="sans-serif"
-        android:text="Portsmouth"
+        android:text="@string/ports"
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -55,7 +57,7 @@
         android:layout_marginRight="299dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-black"
-        android:text="Top Games"
+        android:text="@string/TopGames"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -294,11 +296,13 @@
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="Come and challenge me if you dare :D"
+        android:text="@string/bio"
         android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button"
@@ -307,7 +311,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginBottom="53dp"
         android:fontFamily="sans-serif-black"
-        android:text="Edit Profile"
+        android:text="@string/EditProfile"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

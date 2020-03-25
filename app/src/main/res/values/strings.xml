@@ -8,4 +8,9 @@
     <string name="BoardBuddy">boardbuddy</string>
     <string name="Profile">🧔</string>
     <string name="title_activity_map">Map</string>
+    <string name="DanSmith">Dan Smith</string>
+    <string name="ports">Portsmouth</string>
+    <string name="TopGames">Top games</string>
+    <string name="bio">Come and challenge me if you dare :D</string>
+    <string name="EditProfile">Edit Profile</string>
 </resources>
