@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -25,6 +26,19 @@ public class MyMatches extends AppCompatActivity {
         //Giving drop down layout//
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         SortBy.setAdapter(myAdapter);
+
+        //Sort actions//
+        SortBy.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     //For back button to function properly//
