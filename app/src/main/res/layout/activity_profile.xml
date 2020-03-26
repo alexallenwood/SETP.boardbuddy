@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <TextView
         android:id="@+id/textView6"
@@ -31,14 +31,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
         android:text="@string/portsmouth"
         android:textColor="#000000"
@@ -46,8 +45,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <TextView
         android:id="@+id/textView9"
@@ -60,8 +59,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView8"
@@ -75,8 +74,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <Button
         android:id="@+id/button"
@@ -88,13 +87,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.16000003" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="418dp"
-        android:layout_height="405dp"
+        android:layout_width="374dp"
+        android:layout_height="384dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,8 +128,8 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/chess"
-                        android:contentDescription="@string/chess" />
+                        android:contentDescription="@string/chess"
+                        android:src="@drawable/chess" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -161,8 +160,8 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/tm"
-                        android:contentDescription="@string/terraforming_mars"/>
+                        android:contentDescription="@string/terraforming_mars"
+                        android:src="@drawable/tm" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -202,8 +201,8 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/brass"
-                        android:contentDescription="@string/brass" />
+                        android:contentDescription="@string/brass"
+                        android:src="@drawable/brass" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -234,8 +233,8 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/dnd_logo"
-                        android:contentDescription="@string/dungens_and_dragons" />
+                        android:contentDescription="@string/dungens_and_dragons"
+                        android:src="@drawable/dnd_logo" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -275,8 +274,8 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/gm"
-                        android:contentDescription="@string/gloomhaven" />
+                        android:contentDescription="@string/gloomhaven"
+                        android:src="@drawable/gm" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -308,8 +307,8 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/pl"
-                        android:contentDescription="@string/pandemic_legacy" />
+                        android:contentDescription="@string/pandemic_legacy"
+                        android:src="@drawable/pl" />
 
                     <TextView
                         android:layout_width="wrap_content"
