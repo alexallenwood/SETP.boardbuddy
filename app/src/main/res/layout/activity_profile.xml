@@ -11,7 +11,10 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="60dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/user_image"
         android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,10 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="364dp"
         android:layout_marginEnd="299dp"
         android:layout_marginRight="299dp"
-        android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-black"
         android:text="Top Games"
         android:textColor="#000000"
@@ -62,16 +63,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="418dp"
         android:layout_height="405dp"
+        android:layout_marginTop="400dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-7dp"
-        tools:layout_editor_absoluteY="401dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,7 +96,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="82dp"
@@ -292,10 +297,12 @@
         android:layout_width="355dp"
         android:layout_height="37dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="11dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="Come and challenge me if you dare :D"
         android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -304,11 +311,10 @@
         android:id="@+id/button"
         android:layout_width="133dp"
         android:layout_height="39dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="450dp"
         android:fontFamily="sans-serif-black"
         android:text="Edit Profile"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />

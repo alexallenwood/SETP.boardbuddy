@@ -14,4 +14,5 @@
     <string name="bio">Come and challenge me if you dare :D</string>
     <string name="EditProfile">Edit Profile</string>
     <string name="backbtn">Back</string>
+    <string name="user_image">User Image</string>
 </resources>
