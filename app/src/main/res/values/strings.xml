@@ -10,4 +10,11 @@
     <string name="title_activity_map">Map</string>
     <string name="backbtn_ge">Back</string>
     <string name="Events">Events</string>
+    <string name="Event_message">Showing for Location: </string>
+    <string name="Sort_By">Sort By: </string>
+
+    <string name="Messagebtn_dis">Message button</string>
+    <string name="CreateEventBtn">Button to Create Events</string>
+    <string name="Example">Example</string>
+
 </resources>
