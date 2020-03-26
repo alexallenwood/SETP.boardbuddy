@@ -15,4 +15,15 @@
     <string name="EditProfile">Edit Profile</string>
     <string name="backbtn">Back</string>
     <string name="user_image">User Image</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="top_games">Top Games</string>
+    <string name="come_and_challenge_me_if_you_dare_d">Come and challenge me if you dare :D</string>
+    <string name="portsmouth">Portsmouth</string>
+    <string name="dan_smith">Dan Smith</string>
+    <string name="chess">CHESS</string>
+    <string name="pandemic_legacy">PANDEMIC LEGACY</string>
+    <string name="gloomhaven">GLOOMHAVEN</string>
+    <string name="dungens_and_dragons">DUNGENS AND DRAGONS</string>
+    <string name="brass">BRASS</string>
+    <string name="terraforming_mars">TERRAFORMING MARS</string>
 </resources>
