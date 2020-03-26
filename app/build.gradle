@@ -41,5 +41,3 @@ dependencies {
     implementation 'com.android.support.test:runner:1.0.2'
     implementation 'androidx.cardview:cardview:1.0.0'
 }
-
-

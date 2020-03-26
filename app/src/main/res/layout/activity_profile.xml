@@ -83,6 +83,7 @@
         android:layout_height="39dp"
         android:layout_marginBottom="450dp"
         android:fontFamily="sans-serif-black"
+        android:onClick="EditProfile"
         android:text="@string/edit_profile"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -322,5 +323,18 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/backbtn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BackBtn2"
+        android:text="@string/backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
