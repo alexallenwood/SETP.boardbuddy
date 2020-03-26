@@ -14,7 +14,7 @@ import android.app.AlertDialog;
 import android.widget.Button;
 
 public class Login extends AppCompatActivity {
-    EditText Username, Password;
+    EditText Email, Password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +22,21 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        Email = findViewById(R.id.inptEmail);
         Password = findViewById(R.id.inptPassword);
-        Username = findViewById(R.id.inptEmail);
+
 
     }
 
 
     public void Login(View view) throws InterruptedException {
 
-        String username = Username.getText().toString();
+        String email = Email.getText().toString();
         String password = Password.getText().toString();
         String type = "login";
 
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
-        databaseHelper.execute(type, username, password);
+        databaseHelper.execute(type, email, password);
 
     }
 

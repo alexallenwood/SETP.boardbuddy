@@ -8,4 +8,19 @@
     <string name="BoardBuddy">boardbuddy</string>
     <string name="Profile">🧔</string>
     <string name="title_activity_map">Map</string>
+
+    <string-array name="boardgames">
+
+        <item>Chess</item>
+        <item>Draughts</item>
+        <item>Noughts and Crosses</item>
+        <item>Snakes and Ladders</item>
+        <item>Snap</item>
+        <item>Battleships</item>
+        <item>Connect 4</item>
+        <item>Guess Who</item>
+        <item>Backgammon</item>
+        <item>Blackjack</item>
+    </string-array>
+
 </resources>
