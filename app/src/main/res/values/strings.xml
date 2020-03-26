@@ -17,4 +17,10 @@
     <string name="CreateEventBtn">Button to Create Events</string>
     <string name="Example">Example</string>
 
+    <string-array name="Sort_By_Events">
+        <item>Distance</item>
+        <item>Preferred Games</item>
+        <item>Similar Skill</item>
+    </string-array>
+
 </resources>
