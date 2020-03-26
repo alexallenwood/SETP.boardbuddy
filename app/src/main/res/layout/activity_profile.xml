@@ -98,7 +98,7 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/Chess"/>
+                        android:src="@drawable/Chess" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -308,7 +308,6 @@
         android:layout_marginBottom="53dp"
         android:fontFamily="sans-serif-black"
         android:text="Edit Profile"
-        android:onClick="EditProfile"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
