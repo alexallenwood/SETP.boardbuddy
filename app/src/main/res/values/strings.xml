@@ -8,4 +8,6 @@
     <string name="BoardBuddy">boardbuddy</string>
     <string name="Profile">🧔</string>
     <string name="title_activity_map">Map</string>
+    <string name="backbtn_ge">Back</string>
+    <string name="Events">Events</string>
 </resources>
