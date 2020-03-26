@@ -98,7 +98,7 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/Chess" />
+                        android:src="@drawable/chess" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/Brass" />
+                        android:src="@drawable/brass" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -240,7 +240,7 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/GM" />
+                        android:src="@drawable/gm" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -272,7 +272,7 @@
                         android:layout_width="82dp"
                         android:layout_height="68dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/PL" />
+                        android:src="@drawable/pl" />
 
                     <TextView
                         android:layout_width="wrap_content"
