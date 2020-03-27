@@ -58,9 +58,7 @@
 
 
     <string name="Logo">Connecting nearby boardgame users.</string>
-    <string name="Back_button">Back</string>
-    <string name="Play">Play</string>
-    <string name="CB_Mode">Colour Blind Mode</string>
+
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_location_map">LocationMap</string>
     <!-- Strings used for fragments for navigation -->
@@ -73,12 +71,12 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
-    <string name="CB_Mode">Colour Blind Mode</string>
+
     <string name="Night_Mode">Night Mode</string>
     <string name="MainMenu">MAIN MENU</string>
 
 
-    <string name="Logo">Connecting nearby boardgame users.</string>
+
     <string name="Back_Button">Back</string>
     <string name="Sort_By">Sort By</string>
     <string name="Profiles">Profile</string>

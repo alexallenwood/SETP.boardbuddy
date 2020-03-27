@@ -28,8 +28,8 @@
         android:layout_width="249dp"
         android:layout_height="52dp"
         android:ems="10"
+        android:hint="@string/Enter_Password"
         android:inputType="textPersonName"
-        android:text="@string/Enter_Password"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,8 +43,8 @@
         android:layout_width="250dp"
         android:layout_height="52dp"
         android:ems="10"
+        android:hint="@string/Re_enter_Password"
         android:inputType="textPersonName"
-        android:text="@string/Re_enter_Password"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.858" />
 
     <TextView
-        android:id="@+id/enterShortBio"
+        android:id="@+id/enterShortBio2"
         android:layout_width="100dp"
         android:layout_height="20dp"
         android:gravity="center_horizontal"
@@ -96,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.651" />
 
     <TextView
         android:id="@+id/editProfile"
@@ -199,8 +199,8 @@
         android:layout_width="240dp"
         android:layout_height="51dp"
         android:ems="10"
+        android:hint="@string/Enter_Username"
         android:inputType="textPersonName"
-        android:text="@string/Enter_Username"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,8 +214,8 @@
         android:layout_width="246dp"
         android:layout_height="55dp"
         android:ems="10"
+        android:hint="@string/Enter_Bio"
         android:inputType="textPersonName"
-        android:text="@string/Enter_Bio"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

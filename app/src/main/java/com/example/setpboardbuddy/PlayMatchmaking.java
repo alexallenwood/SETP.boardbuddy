@@ -51,11 +51,11 @@ public class PlayMatchmaking extends AppCompatActivity {
         new MyTask().execute();
 
 
-        Spinner mySpinner = (Spinner) findViewById(com.example.setpboardbuddy.R.id.SpinnerSort);
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(PlayMatchmaking.this,
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.PlayViewSort));
-        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinner.setAdapter(myAdapter);
+//        Spinner mySpinner = (Spinner) findViewById(com.example.setpboardbuddy.R.id.SpinnerSort);
+//        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(PlayMatchmaking.this,
+//                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.PlayViewSort));
+//        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        mySpinner.setAdapter(myAdapter);
 
         //once page is created the shared preference which is referenced to in the settings is used as the background colour
         SharedPreferences bgSave = getSharedPreferences("bgColor", Context.MODE_PRIVATE);
