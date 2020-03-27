@@ -22,13 +22,11 @@ public class Register extends AppCompatActivity implements AdapterView.OnItemSel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
 //        Spinner spinner = (Spinner)findViewById(R.id.spinner);
 //        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.boardgames, android.R.layout.simple_spinner_item);
 //        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //        spinner.setAdapter(adapter);
 //        spinner.setOnItemSelectedListener(this);
-
 
         name = (EditText) findViewById(R.id.inptForenameReg);
         surname = (EditText) findViewById(R.id.inptSurnameReg);
@@ -37,8 +35,6 @@ public class Register extends AppCompatActivity implements AdapterView.OnItemSel
         password = (EditText) findViewById(R.id.inptPassReg);
         latitude = (EditText) findViewById(R.id.latitudeReg);
         longitude = (EditText) findViewById(R.id.longitudeReg);
-
-
     }
 
      @Override

@@ -18,16 +18,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent backLogin = new Intent(MainActivity.this, Login.class);
+        Intent backLogin = new Intent(MainActivity.this, Login.class);                  //Executes the "back" intent and switches back to the MainActivity (menu)
     }
 
     public  void PlayMatchmaking(View view){
-        Intent playMatchmaking = new Intent(MainActivity.this,PlayMatchmaking.class);
+        Intent playMatchmaking = new Intent(MainActivity.this,PlayMatchmaking.class);   //Executes the "Play" intent and switches to the PlayMatchmaking activity
         startActivity(playMatchmaking);
     }
 
     public  void GroupEvents(View view){
-        Intent groupEvents = new Intent(MainActivity.this,GroupEvents.class);
+        Intent groupEvents = new Intent(MainActivity.this,GroupEvents.class);           //Executes the "Group" intent and switches to the GroupEvents activity
         startActivity(groupEvents);
     }
 
