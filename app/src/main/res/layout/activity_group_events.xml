@@ -67,18 +67,18 @@
         android:text="@string/Sort_By"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintHorizontal_bias="0.79"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backbtn_GE"
         app:layout_constraintVertical_bias="0.100000024" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
+        android:id="@+id/sort_byGE"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sort_by_GE"
         app:layout_constraintVertical_bias="0.00999999" />
@@ -90,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/sort_byGE"
         app:layout_constraintVertical_bias="0.428">
 
         <TableLayout
