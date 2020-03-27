@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void Map(View view){
-        Intent map = new Intent(MainActivity.this,Map.class);
+        Intent map = new Intent(MainActivity.this,LocationPermission.class);
         startActivity(map);
     }
 
