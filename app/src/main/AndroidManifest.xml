@@ -43,7 +43,6 @@
         <activity android:name=".Profile" />
         <activity android:name=".PlayMatchmaking" />
         <activity android:name=".MyMatches" />
-        <activity android:name=".Map" />
         <activity android:name=".Register" />
         <activity android:name=".Login">
             <intent-filter>
