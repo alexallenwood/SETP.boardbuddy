@@ -31,8 +31,12 @@
         android:inputType="textPersonName"
         android:text="@string/Enter_Password"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="544dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
 
     <EditText
         android:id="@+id/enterCPword"
@@ -43,9 +47,11 @@
         android:text="@string/Re_enter_Password"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898"
-        tools:layout_editor_absoluteX="96dp" />
+        app:layout_constraintVertical_bias="0.906" />
 
     <Button
         android:id="@+id/save"
@@ -96,16 +102,16 @@
         android:id="@+id/editProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="@string/Edit_Profile"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <ImageView
         android:id="@+id/profilePic"
@@ -167,6 +173,7 @@
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:background="#C8E6E6"
+        android:onClick="BackBtn3"
         android:text="@string/Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -195,8 +202,12 @@
         android:inputType="textPersonName"
         android:text="@string/Enter_Username"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="408dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
 
     <EditText
         android:id="@+id/enterShortBio"
@@ -206,8 +217,12 @@
         android:inputType="textPersonName"
         android:text="@string/Enter_Bio"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="474dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
 
     <TextView
         android:id="@+id/editPhotoDescr"

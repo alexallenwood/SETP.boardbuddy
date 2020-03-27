@@ -45,6 +45,8 @@ public class edit_profile extends AppCompatActivity {
 
                 }
             }
+
+
             protected void onActivityResult (int requestCode, int resultCode, Intent data) {
                 edit_profile.super.onActivityResult(requestCode, resultCode, data);
                 if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && data != null) {
@@ -113,5 +115,12 @@ public class edit_profile extends AppCompatActivity {
         CPword = newCPassword.getText().toString().trim();
 
     }
+
+    public void BackBtn3(View view){
+        Intent myIntent = new Intent(edit_profile.this, Profile.class);
+        startActivity(myIntent);
+    }
+
+
 
 }
