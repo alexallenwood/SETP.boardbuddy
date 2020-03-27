@@ -9,5 +9,7 @@
     <string name="Profile">🧔</string>
     <string name="title_activity_map">Map</string>
     <string name="CB_Mode">Colour Blind Mode</string>
+    <string name="Night_Mode">Night Mode</string>
     <string name="txtSetting">Text Size: </string>
+
 </resources>

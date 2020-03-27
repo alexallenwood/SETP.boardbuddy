@@ -1,6 +1,9 @@
 package com.example.setpboardbuddy;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
@@ -23,6 +26,12 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+
+        SharedPreferences bgSave = getSharedPreferences("bgColor", Context.MODE_PRIVATE);
+        int colorBG = bgSave.getInt("backgroundColor", 0);
+        View view = this.getWindow().getDecorView();
+        view.setBackgroundColor(colorBG);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapAPI);

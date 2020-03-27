@@ -7,6 +7,21 @@
     tools:context=".Settings">
 
     <Button
+        android:id="@+id/btnNightMode"
+        android:layout_width="373dp"
+        android:layout_height="68dp"
+        android:background="#C8E6E6"
+        android:text="@string/Night_Mode"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665"
+        tools:text="@string/Night_Mode" />
+
+    <Button
         android:id="@+id/btnTxtSize"
         android:layout_width="373dp"
         android:layout_height="68dp"
@@ -18,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintVertical_bias="0.446" />
 
     <Button
         android:id="@+id/btnCBMode"
@@ -26,6 +41,7 @@
         android:layout_height="68dp"
         android:background="#C8E6E6"
         android:text="@string/CB_Mode"
+        android:textColor="#120F0F"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,10 +51,11 @@
         app:layout_constraintVertical_bias="0.23" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Settings"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,4 +64,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
