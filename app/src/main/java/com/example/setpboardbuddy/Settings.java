@@ -33,11 +33,13 @@ public class Settings extends AppCompatActivity {
         // setting variables to the appropriate buttons and text ID (b1 = 1st button)
         txt = (TextView) findViewById(R.id.textView);
         b1 = (Button) findViewById(R.id.btnCBMode);
-        b2 = (Button) findViewById(R.id.btnTxtSize);
+        b2 = (Button) findViewById(R.id.btnMain);
         b3 = (Button) findViewById(R.id.btnNightMode);
 
 
         //checks if button colourblind button(b1) has been clicked
+        // once clicked changes background colour and txt colour
+        //changes stored as shared preferences and applied to other activities
             b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,23 +52,40 @@ public class Settings extends AppCompatActivity {
                 b2.setBackgroundColor(Tcolor);
                 b3.setBackgroundColor(Tcolor);
                 SharedPreferences bgSave = Settings.this.getSharedPreferences("bgColor", Context.MODE_PRIVATE);
-                //SharedPreferences txtSave = Settings.this.getSharedPreferences("txtColor", Context.MODE_PRIVATE);
-                //SharedPreferences.Editor txteditor = txtSave.edit();
                 SharedPreferences.Editor bgeditor = bgSave.edit();
                 bgeditor.putInt("backgroundColor", Bcolor);
                 bgeditor.apply();
-                //txteditor.putInt("textColor", Bcolor);
-                //txteditor.apply();
             }
+        });
 
-            //   b1.setBackgroundColor(Color.parseColor("#236B8E"));
-            //   b2.setBackgroundColor(Color.parseColor("#236B8E"));
-            // txt.setTextColor(Color.parseColor("#FFA500"));
+        //checks if button nightmode button(b3) has been clicked
+        // once clicked changes background colour and txt colour
+        //changes stored as shared preferences and applied to other activities
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int Bcolor = Color.parseColor("#000000");
+                int Btncolor = Color.parseColor("#2f2f2f");
+                int Tcolor = Color.parseColor("#FFA500");
+                View view = Settings.this.getWindow().getDecorView();
+                view.setBackgroundColor(Bcolor);
+                txt.setTextColor(Tcolor);
+                b1.setBackgroundColor(Btncolor);
+                b2.setBackgroundColor(Btncolor);
+                b3.setBackgroundColor(Btncolor);
+                SharedPreferences bgSave = Settings.this.getSharedPreferences("bgColor", Context.MODE_PRIVATE);
+                SharedPreferences.Editor bgeditor = bgSave.edit();
+                bgeditor.putInt("backgroundColor", Bcolor);
+                bgeditor.apply();
+            }
         });
 
     }
-
-
+    // function to send page to main menu once main menu button is clicked
+    public  void Home(View view) {
+        Intent home = new Intent(Settings.this, MainActivity.class);
+        startActivity(home);
+    }
 }
 
 

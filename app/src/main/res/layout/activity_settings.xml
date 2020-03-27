@@ -18,22 +18,23 @@
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665"
+        app:layout_constraintVertical_bias="0.47"
         tools:text="@string/Night_Mode" />
 
     <Button
-        android:id="@+id/btnTxtSize"
-        android:layout_width="373dp"
-        android:layout_height="68dp"
+        android:id="@+id/btnMain"
+        android:layout_width="190dp"
+        android:layout_height="62dp"
         android:background="#C8E6E6"
-        android:text="@string/txtSetting"
+        android:onClick="Home"
+        android:text="@string/MainMenu"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintVertical_bias="0.907"
+        tools:text="@string/MainMenu" />
 
     <Button
         android:id="@+id/btnCBMode"
@@ -55,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Settings"
-        android:textColor="#FFFFFF"
+        android:textColor="@android:color/secondary_text_light"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

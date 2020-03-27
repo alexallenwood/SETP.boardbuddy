@@ -15,8 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//once page is created the shared preference which is referenced to in the settings is used as the background colour
         SharedPreferences bgSave = getSharedPreferences("bgColor", Context.MODE_PRIVATE);
-        int colorBG = bgSave.getInt("backgroundColor", 0);
+        int colorBG = bgSave.getInt("backgroundColor", -1);
         View view = this.getWindow().getDecorView();
         view.setBackgroundColor(colorBG);
 
