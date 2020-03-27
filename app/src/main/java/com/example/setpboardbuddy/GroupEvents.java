@@ -25,6 +25,8 @@ public class GroupEvents extends AppCompatActivity {
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         SortByGE.setAdapter(myAdapter);
     }
+
+    //For back button to function properly
     public  void Back(View view) {
         Intent MainActivity = new Intent(GroupEvents.this, MainActivity.class);
         startActivity(MainActivity);
