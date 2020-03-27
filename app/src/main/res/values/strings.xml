@@ -18,6 +18,7 @@
 
     <string name="title_activity_map">Map</string>
 
+
     <string name="Edit_Profile">Edit Profile</string>
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username:</string>
@@ -69,6 +70,11 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="CB_Mode">Colour Blind Mode</string>
+    <string name="Night_Mode">Night Mode</string>
+    <string name="MainMenu">MAIN MENU</string>
 
 
 </resources>

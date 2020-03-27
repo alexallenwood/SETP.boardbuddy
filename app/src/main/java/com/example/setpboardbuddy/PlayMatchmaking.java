@@ -2,6 +2,7 @@ package com.example.setpboardbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,6 +17,12 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.View;
+
+
 public class PlayMatchmaking extends AppCompatActivity {
     private static final String url = "jdbc:mysql://10.0.2.2/boardbuddydb";
     private static final String user = "root";
@@ -27,6 +34,7 @@ public class PlayMatchmaking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_matchmaking);
+
 
         firstName = findViewById(R.id.txtName);
         locationlat = findViewById(R.id.txtLatitude);
@@ -48,6 +56,13 @@ public class PlayMatchmaking extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.PlayViewSort));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
+
+        //once page is created the shared preference which is referenced to in the settings is used as the background colour
+        SharedPreferences bgSave = getSharedPreferences("bgColor", Context.MODE_PRIVATE);
+        int colorBG = bgSave.getInt("backgroundColor", 0);
+        View view = this.getWindow().getDecorView();
+        view.setBackgroundColor(colorBG);
+
     }
 
     public void Back(View view) {

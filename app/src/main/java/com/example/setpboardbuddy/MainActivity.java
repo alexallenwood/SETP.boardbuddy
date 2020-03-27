@@ -2,7 +2,9 @@ package com.example.setpboardbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,12 +15,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         Intent backLogin = new Intent(MainActivity.this, Login.class);                  //Executes the "back" intent and switches back to the MainActivity (menu)
+
+//once page is created the shared preference which is referenced to in the settings is used as the background colour
+        SharedPreferences bgSave = getSharedPreferences("bgColor", Context.MODE_PRIVATE);
+        int colorBG = bgSave.getInt("backgroundColor", -1);
+        View view = this.getWindow().getDecorView();
+        view.setBackgroundColor(colorBG);
+
+
     }
 
     public  void PlayMatchmaking(View view){
@@ -50,5 +61,6 @@ public class MainActivity extends AppCompatActivity {
         Intent myMatches = new Intent(MainActivity.this,MyMatches.class);
         startActivity(myMatches);
     }
+
 
 }
