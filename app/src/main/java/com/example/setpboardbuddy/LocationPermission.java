@@ -35,7 +35,7 @@ public class LocationPermission extends AppCompatActivity {
 
         //Only have to allow permission ONCE for device, if user allows permission then when the app is opened again it will go straight to map
         if(ContextCompat.checkSelfPermission(LocationPermission.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-            startActivity(new Intent(LocationPermission.this, LocationMap.class));
+            startActivity(new Intent(LocationPermission.this, LocationMap.class)); //If user enables location then it user to map
             finish();
             return;
         }
