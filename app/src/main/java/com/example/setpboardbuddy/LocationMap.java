@@ -116,6 +116,7 @@ public class LocationMap extends AppCompatActivity implements OnMapReadyCallback
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        //Number has to be same as one given in code above
         if(requestCode == 25){
             if(resultCode == RESULT_OK){
                 getDeviceLocation();
@@ -126,7 +127,7 @@ public class LocationMap extends AppCompatActivity implements OnMapReadyCallback
     //to get a location update
     @SuppressLint("MissingPermission")
     private void getDeviceLocation(){
-        mFusedLocationProviderClient.getLastLocation()
+        mFusedLocationProviderClient.getLastLocation() //The fused location provider is a location API in Google Play services which uses signals to provide location
                 .addOnCompleteListener(new OnCompleteListener<Location>() {
                     @Override
                     public void onComplete(@NonNull Task<Location> task) {

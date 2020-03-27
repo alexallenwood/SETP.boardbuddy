@@ -16,6 +16,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
+//Imported package for requesting user to enable location
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -58,7 +60,7 @@ public class LocationPermission extends AppCompatActivity {
                                 if(response.isPermanentlyDenied()){
                                     AlertDialog.Builder builder = new AlertDialog.Builder(LocationPermission.this);
                                     builder.setTitle("Permission denied")
-                                            .setMessage("Permission to access device location is permanently denied. You must go to settings to allow permission.")
+                                            .setMessage("Permission to access device location has been denied. You must go to settings to allow permission.")
                                             .setNegativeButton("Cancel", null)
                                             .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                                 @Override
