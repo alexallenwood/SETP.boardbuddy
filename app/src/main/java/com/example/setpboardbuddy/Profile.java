@@ -14,11 +14,14 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
     }
 
+
+    //Back button to work properly
     public void BackBtn2(View view){
         Intent myIntent = new Intent(Profile.this, MainActivity.class);
         startActivity(myIntent);
     }
 
+    //for edit profile button, which redirect to edit profile activity
     public void EditProfile(View view){
         Intent myIntent = new Intent(Profile.this, edit_profile.class);
         startActivity(myIntent);
