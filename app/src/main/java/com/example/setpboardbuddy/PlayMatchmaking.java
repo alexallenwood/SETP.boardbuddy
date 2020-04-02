@@ -15,19 +15,23 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
+import java.util.Random;
+import android.widget.EditText;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import java.util.Calendar;
+import java.util.Date;
 
 
-public class PlayMatchmaking extends AppCompatActivity {
+public class PlayMatchmaking extends AppCompatActivity{
     private static final String url = "jdbc:mysql://10.0.2.2/boardbuddydb";
     private static final String user = "root";
     private static final String pass = "";
     private TextView firstName, locationlat, locationlong, firstName2, locationlat2, locationlong2, firstName3, locationlat3, locationlong3;
+    private TextView game;
 
 
     @Override
@@ -63,11 +67,44 @@ public class PlayMatchmaking extends AppCompatActivity {
         View view = this.getWindow().getDecorView();
         view.setBackgroundColor(colorBG);
 
+
+        String[] array1 = getResources().getStringArray(R.array.games_array);
+        String strGame1 = array1[new Random().nextInt(array1.length)];
+        ((TextView) findViewById(R.id.txtGame1)).setText(strGame1);
+
+        String[] array2 = getResources().getStringArray(R.array.games_array);
+        String strGame2 = array2[new Random().nextInt(array2.length)];
+        ((TextView) findViewById(R.id.txtGame2)).setText(strGame2);
+
+        String[] array3 = getResources().getStringArray(R.array.games_array);
+        String strGame3 = array3[new Random().nextInt(array3.length)];
+        ((TextView) findViewById(R.id.txtGame3)).setText(strGame3);
+
+
+        Calendar cal1 = Calendar.getInstance(); // creates calendar cal
+        cal1.setTime(new Date()); // sets calendar time or date
+        cal1.add(Calendar.HOUR_OF_DAY, 1); // adds one hour to the time
+        cal1.getTime();
+        ((TextView) findViewById(R.id.txttime1)).setText("" + String.format("%1$tA %1$tb %1$td at %1$tI:%1$tM %1$Tp", cal1));
+
+        Calendar cal2 = Calendar.getInstance(); // creates calendar cal
+        cal2.setTime(new Date()); // sets calendar time or date
+        cal2.add(Calendar.HOUR_OF_DAY, 2); // adds one hour to the time
+        cal2.getTime();
+        ((TextView) findViewById(R.id.txttime2)).setText("" + String.format("%1$tA %1$tb %1$td at %1$tI:%1$tM %1$Tp", cal2));
+
+        Calendar cal3 = Calendar.getInstance(); // creates calendar cal
+        cal3.setTime(new Date()); // sets calendar time or date
+        cal3.add(Calendar.HOUR_OF_DAY, 3); // adds one hour to the time
+        cal3.getTime();
+        ((TextView) findViewById(R.id.txttime3)).setText("" + String.format("%1$tA %1$tb %1$td at %1$tI:%1$tM %1$Tp", cal3));
+
     }
 
     public void Back(View view) {
         Intent playMatchmaking = new Intent(PlayMatchmaking.this, MainActivity.class);
         startActivity(playMatchmaking);
+
     }
 
 

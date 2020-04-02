@@ -9,7 +9,6 @@
 
     <string name="Profile">🧔</string>
     <string name="CB_Mode">Colour Blind Mode</string>
-    <string name="editProfile">Edit Profile</string>
     <string name="txtSetting">Text Size: </string>
     <string name="Event_page">Events</string>
     <string name="Back_button">Back</string>
@@ -21,7 +20,7 @@
 
 
 
-    <string name="Edit_Profile">Edit Profile</string>
+    <string name="Edit_Profile">Edit Profile ✏️</string>
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username:</string>
     <string name="Short_Bio">Edit Short Bio:</string>
@@ -79,13 +78,25 @@
 
 
     <string name="Back_Button">Back</string>
-    <string name="Sort_By">Sort By</string>
+<!--    <string name="Sort_By">Sort By</string>-->
     <string name="Profiles">Profile</string>
 
     <string-array name="Sort_By_Itms">
         <item>Distance</item>
         <item>Age</item>
         <item>Example</item>
+    </string-array>
+
+    <string-array name="games_array">
+        <item>Chess</item>
+        <item>Draughts</item>
+        <item>Backgammon</item>
+        <item>Battleships</item>
+        <item>Blackjack</item>
+        <item>Connect 4</item>
+        <item>Noughts and Crosses</item>
+        <item>Snap</item>
+        <item>Guess Who</item>
     </string-array>
 
 

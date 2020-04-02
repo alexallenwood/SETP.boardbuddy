@@ -2,22 +2,11 @@ package com.example.setpboardbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import android.content.*;
-
-
-import android.content.Context;
-import android.content.SharedPreferences;
-
-import android.os.Bundle;
-import android.view.View;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-
 
 public class GroupEvents extends AppCompatActivity {
 
@@ -25,21 +14,6 @@ public class GroupEvents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_events);
-
-
-        //once page is created the shared preference which is referenced to in the settings is used as the background colour
-        SharedPreferences bgSave = getSharedPreferences("bgColor", Context.MODE_PRIVATE);
-        int colorBG = bgSave.getInt("backgroundColor", 0);
-        View view = this.getWindow().getDecorView();
-        view.setBackgroundColor(colorBG);
-
-    }
-
-    public void BackBtn(View view){
-        Intent myIntent = new Intent(GroupEvents.this, MainActivity.class);
-        startActivity(myIntent);
-    }
-
 
         //For Sort_By drop down list//
         Spinner SortByGE = (Spinner) findViewById(R.id.sort_byGE);
@@ -57,6 +31,5 @@ public class GroupEvents extends AppCompatActivity {
         Intent MainActivity = new Intent(GroupEvents.this, MainActivity.class);
         startActivity(MainActivity);
     }
-
 
 }

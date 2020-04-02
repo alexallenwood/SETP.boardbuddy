@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -13,9 +14,13 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class edit_profile extends AppCompatActivity {
     private static final int RESULT_LOAD_IMAGE = 1;
-
     private EditText newUsername;
     private EditText newShortBio;
     private EditText newPassword;
@@ -28,6 +33,10 @@ public class edit_profile extends AppCompatActivity {
     ImageView imageToUpload;
     Button save;
 
+    private static final String url = "jdbc:mysql://10.0.2.2/boardbuddydb";
+    private static final String user = "root";
+    private static final String pass = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +46,7 @@ public class edit_profile extends AppCompatActivity {
         profilePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch(v.getId()){
+                switch (v.getId()) {
                     case R.id.profilePic:
                         Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                         startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
@@ -47,7 +56,7 @@ public class edit_profile extends AppCompatActivity {
             }
 
 
-            protected void onActivityResult (int requestCode, int resultCode, Intent data) {
+            protected void onActivityResult(int requestCode, int resultCode, Intent data) {
                 edit_profile.super.onActivityResult(requestCode, resultCode, data);
                 if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && data != null) {
                     Uri selectedImage = data.getData();
@@ -69,6 +78,7 @@ public class edit_profile extends AppCompatActivity {
         });
 
     }
+
 
     public void save(){
         initialize(); //initialize the input to string variables.
