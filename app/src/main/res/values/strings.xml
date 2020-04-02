@@ -20,6 +20,7 @@
 
 
 
+
     <string name="Edit_Profile">Edit Profile</string>
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username:</string>
@@ -85,6 +86,24 @@
         <item>Distance</item>
         <item>Age</item>
         <item>Example</item>
+    </string-array>
+
+
+
+    <string name="backbtn_ge">Back</string>
+    <string name="Events">Events</string>
+    <string name="Event_message">Showing for Location: </string>
+    <string name="Sort_By">Sort By: </string>
+    <string name="Button">Button</string>
+
+    <string name="Messagebtn_dis">Message button</string>
+    <string name="CreateEventBtn">Button to Create Events</string>
+    <string name="Example">Example</string>
+
+    <string-array name="Sort_By_Events">
+        <item>Distance</item>
+        <item>Preferred Games</item>
+        <item>Similar Skill</item>
     </string-array>
 
 
