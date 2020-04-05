@@ -37,15 +37,17 @@
         <activity android:name=".PlayMatchmaking" />
         <activity android:name=".MyMatches" />
         <activity android:name=".Register" />
-        <activity android:name=".Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Login"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".MainActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
-        <activity android:name=".MainActivity" />
-
+        
         <meta-data
             android:name="come.google.android.geo.API_KEY"
             android:value="AIzaSyDOn2fgmgpY5WBqliVZlYzf4FvHLbHn8Bw" />
