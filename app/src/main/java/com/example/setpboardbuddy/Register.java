@@ -84,6 +84,8 @@ public class Register extends AppCompatActivity implements AdapterView.OnItemSel
             Intent registerUser = new Intent(Register.this,Login.class);
             startActivity(registerUser);    //Sends the user back to the login page
         }
+
+
     }
 
 
