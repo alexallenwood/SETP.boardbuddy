@@ -1,5 +1,4 @@
 package com.example.setpboardbuddy;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 

@@ -18,8 +18,6 @@
     <string name="title_activity_map">Map</string>
 
 
-
-
     <string name="Edit_Profile">Edit Profile ✏️</string>
     <string name="Edit_Photo">Edit</string>
     <string name="Edit_Username">Edit Username:</string>
@@ -71,14 +69,12 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
-
     <string name="Night_Mode">Night Mode</string>
     <string name="MainMenu">MAIN MENU</string>
 
 
-
     <string name="Back_Button">Back</string>
-<!--    <string name="Sort_By">Sort By</string>-->
+    <!--    <string name="Sort_By">Sort By</string>-->
     <string name="Profiles">Profile</string>
 
     <string-array name="Sort_By_Itms">
@@ -98,7 +94,6 @@
         <item>Snap</item>
         <item>Guess Who</item>
     </string-array>
-
 
 
     <string name="backbtn_ge">Back</string>

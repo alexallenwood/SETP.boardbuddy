@@ -1,5 +1,4 @@
 package com.example.setpboardbuddy;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -22,13 +21,10 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login);    //Sets the view for the activity
 
 
-        Email = findViewById(R.id.inptEmail);
-
-
-
+        Email = findViewById(R.id.inptEmail);       //Assigns the input boxes EditText names
         Password = findViewById(R.id.inptPassword);
 
 
@@ -39,18 +35,17 @@ public class Login extends AppCompatActivity {
 
         String email = Email.getText().toString();
         String password = Password.getText().toString();
-        String type = "login";
+        String type = "login";          //sets the type for the DatabaseHelper
 
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
-        databaseHelper.execute(type, email, password);
+        databaseHelper.execute(type, email, password);          //Inputs the EditText values into the AsyncTask (DatabaseHelper)
 
     }
 
 
-
     public void Register (View view){
         Intent register = new Intent(Login.this, Register.class);
-        startActivity(register);
+        startActivity(register);        //Starts the register activity when the "Register" button is pressed
     }
 
 }

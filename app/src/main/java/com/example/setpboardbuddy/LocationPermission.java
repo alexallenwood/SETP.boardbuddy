@@ -1,5 +1,4 @@
 package com.example.setpboardbuddy;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;

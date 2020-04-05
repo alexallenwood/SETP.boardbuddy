@@ -1,5 +1,4 @@
 package com.example.setpboardbuddy;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.IntentSender;
@@ -48,6 +47,7 @@ public class LocationMap extends AppCompatActivity implements OnMapReadyCallback
     private View mapView;
 
     private final float DEFAULT_ZOOM = 18;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,9 @@ public class LocationMap extends AppCompatActivity implements OnMapReadyCallback
 
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(LocationMap.this);
         Places.initialize(LocationMap.this, "AIzaSyDOn2fgmgpY5WBqliVZlYzf4FvHLbHn8Bw"); //API KEY
+
+
+
 
     }
 
