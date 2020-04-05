@@ -32,8 +32,8 @@ public class DatabaseHelper extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url = "http://192.168.0.75/login.php";                                            //provides a connection to the localhost database, using the php files stored in the "www" folder in WAMP server
-        String register_url = "http://192.168.0.75/register.php";                                        //CHANGE THE "???????" to your IPV4 IP ADDRESS for the WAMP server to work and connect to the database (which is locally set up)
+        String login_url = "http://???????/login.php";                                            //provides a connection to the localhost database, using the php files stored in the "www" folder in WAMP server
+        String register_url = "http://?????/register.php";                                        //CHANGE THE "???????" to your IPV4 IP ADDRESS for the WAMP server to work and connect to the database (which is locally set up)
 
 
         if (type.equals("login")) {                                                                  //Determines if the Database helper should run the "login" code or the "register" code
